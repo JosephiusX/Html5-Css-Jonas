@@ -130,3 +130,35 @@ if we set the position of a button to absolute with bottom 50px and right 50px t
 generally we use this method for small things like buttons, not for layouts.
 
 ## 41.Pseudo-elements
+
+dont exist in html but that we can still select and style in css
+
+        h1::first-letter {
+            // change style of first letter of html
+        }
+
+        p::first-line {
+            // select first line of all paragraphs
+        }
+
+        h3 + p::first-line { // + adjacent sibling selector
+            // only paragraphs after h3 are selected
+        }
+
+        h2::after { // creating content after h1
+            content: "TOP";
+            display: inline-block
+            padding: 5px 10px
+        } // a good use for inline-block so we can add padding all around
+
+## 47. Using floats
+
+### floats
+
+            Element is removed romt the normal flow: " out of the flow (like absolute positioning)
+
+            Test inline elements will wrap around the floated element ( unlike absolute positioning )
+
+        usage
+            float: left
+            float: right
