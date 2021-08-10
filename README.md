@@ -113,7 +113,7 @@ all the elements in an html body tag can inherit things from the body (mostly fo
     -Elements "in flow"
     -Elements are simply laid out according to their order in the HTML code
 
-    Default Positioning:
+    usage
         position: relative
 
 ### Absolute Positioning
@@ -122,4 +122,11 @@ all the elements in an html body tag can inherit things from the body (mostly fo
     -No impact on surrounding elements, might overlap them
     -We use top, bottom, left or right to offset the element from its relatively positioned container
 
-    position: absolute
+    usage
+        position: absolute
+
+if we set the position of a button to absolute with bottom 50px and right 50px the button will appear at the bottom right of the viewport unless we set its parent to relative. Then it appears at the bottom right of the page instead.
+
+generally we use this method for small things like buttons, not for layouts.
+
+## 41.Pseudo-elements
