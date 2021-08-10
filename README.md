@@ -164,3 +164,15 @@ dont exist in html but that we can still select and style in css
             float: right
 
 ## 48. Clearing Floats
+
+## 50 box-sizing border-box
+
+if i add padding to s box it is added to the width that the box already is
+
+            box-sizing: border-box;
+
+            // padding and borders that we do specify will now reduce inner width of content area
+
+this sets size no matter what padding is added, the default setting(content-box) is not as useful
+
+            we can add the setting to the universal selector to apply it to all boxes, not the body tho because its not inherited
