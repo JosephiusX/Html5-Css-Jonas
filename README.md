@@ -163,5 +163,4 @@ dont exist in html but that we can still select and style in css
             float: left
             float: right
 
-
 ## 48. Clearing Floats
