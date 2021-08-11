@@ -176,3 +176,18 @@ if i add padding to s box it is added to the width that the box already is
 this sets size no matter what padding is added, the default setting(content-box) is not as useful
 
             we can add the setting to the universal selector to apply it to all boxes, not the body tho because its not inherited
+
+## 52. Intro to flexbox
+
+to use flexbox set display:flex on a parent element to start
+
+            to use in child:
+                {
+                    display: flex;
+                    align-items: center; // centers vertivally by default
+                    align-items: flex-start; // top
+                    align-items: flex-end; // bottom
+                    justify-content: center: // centers horizontally by default
+                    justify-content: space-between // spaces out evenly
+                    justify-content: space-around // even amount of space around each element
+                }
