@@ -233,3 +233,9 @@ this sets size no matter what padding is added, the default setting(content-box)
 
                     order: change the order of items in the container
                         0 | <integer>
+
+## 54. Spacing and aligining flex items
+
+the order is 0 by default, to ensure that a flex item is first, give it a value lower than 0 like -1
+
+instead of putting a margin on the elements to space them out , I can use gap to make space between flex items
