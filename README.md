@@ -179,15 +179,57 @@ this sets size no matter what padding is added, the default setting(content-box)
 
 ## 52. Intro to flexbox
 
-to use flexbox set display:flex on a parent element to start
+## 53. A Flexbox Overview
 
-            to use in child:
-                {
-                    display: flex;
-                    align-items: center; // centers vertivally by default
-                    align-items: flex-start; // top
-                    align-items: flex-end; // bottom
-                    justify-content: center: // centers horizontally by default
-                    justify-content: space-between // spaces out evenly
-                    justify-content: space-around // even amount of space around each element
-                }
+            flex container, box within which children are moved around, in parent:
+                display:flex
+
+            Items within the container:
+                flex items
+
+            the default direction which the flex items are laid out (left to right)
+                main axis
+
+            the default perpendicular axis is called the cross axis (top to bottom)
+
+            to use flexbox set display:flex on a container element to start
+
+### Flex container
+
+                    gap: spaces between items without using margins
+                        0
+
+                    justify-content: align by main axis
+                        flex-start | flex-end | space-between | space-around | space-evenly
+
+                    align-items: align allong cross axis
+                        stretch | flex-start | flex-end | center | baseline
+
+                    flex-direction: defines the main axis
+                        row | row-reverse | column | column-reverse
+
+                    flex-wrap: (advanced)- wrap to new line
+                        nowrap | wrap | wrap-reverse
+
+                    align-content: applies to multiple lines
+                        stretch | flex-start | flex-end | center | space-between | space-around
+
+### Flex Items
+
+                    align-self: overwrite align-items for individual items
+                        auto | stretch |flex-start | flex-end | center | baseline
+
+                    flex-grow:  allow an element to grow
+                        0 | <integer>
+
+                    flex-shrink:  allow an element to shrink
+                        1 | <integer>
+
+                    flex-basis : define items width, instead of width property
+                        auto | <length>
+
+                    flex: shorthand for flex-grow, -shrink, -basis
+                        0 1 auto | <int> <int> <int>
+
+                    order: change the order of items in the container
+                        0 | <integer>
