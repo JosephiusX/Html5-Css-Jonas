@@ -304,3 +304,26 @@ a grid of 6 cells can have less grid items, the cells just define the grid
                     repeat(4, 1fr); // 4 rows/columns one fractional unit width/heigth
 
 ## 62. Placing and Spanning Grid items
+
+manually placing items in a grid cell other than the predefined one
+
+            	grid-column: 2 / 3;
+                    column between column gap one and column gap 2
+
+    			grid-row: 1 / 2;
+                    first row
+
+                1 / span 3:
+                    start at 1 and span to 3
+
+                2 / -1
+                    -1 represents the end like in js arrays
+
+if the second number is one more than the first we can omit it like so:
+
+                grid-column: 1;
+    			grid-row: 2;
+
+            this is the same as:
+                grid-column: 1 / 2;
+    			grid-row: 2 / 3;
