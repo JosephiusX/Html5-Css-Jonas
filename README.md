@@ -239,3 +239,68 @@ this sets size no matter what padding is added, the default setting(content-box)
 the order is 0 by default, to ensure that a flex item is first, give it a value lower than 0 like -1
 
 instead of putting a margin on the elements to space them out , I can use gap to make space between flex items
+
+## 60. A CSS Grid Overview
+
+whereas flexbox is good for one demensional layouts , grid is the goto for 2 dememsional layouts. and the work together well
+
+            grid container
+            grid items
+            column axis
+            row axis
+
+            usage:
+                display grid
+
+            unlike flexbox the axises can not be changed
+
+            gridlines
+            grid cells
+
+a grid of 6 cells can have less grid items, the cells just define the grid
+
+            gutters: spaces between gaps
+            grid tracks, columns or rows
+
+## Grid container basics
+
+            grid-template-rows: <track size>*
+            grid-template-columns: <track size>*
+                to establish the grid row and column tracks.
+
+            row-gap: 0 | <length>
+            column-gap: " "
+            gap: " "
+                to create empty spaces between tracks
+
+            justify-items: stretch | start | center | end
+            align-items:  "  "
+                to align items inside rows / columns (horizontally / vertically)
+
+            justify-content: start | center | end | ...
+            align-content:  " "
+                align entire grid inside grid container, only applies if container is larger than grid
+
+## Grid items basics
+
+            grid-column: <start line> / <end line> | span <number>
+            grid-row: <start line> / <end line> | span <number>
+                to place grid item into a specific cell, based on line numbers.
+                span keyword can be used tospan an iter across more cells
+
+            justify-self: stretch | start | center | end
+            align-self: stretch | start | center |ene
+                to overwrite justify-items/align-items for single items
+
+## 61. Sizing Grid Columns and rows
+
+            grid-template-columns: | grid-template-rows :
+                units of measurement:
+                    px
+                    em
+                    rem
+                    fr
+                    auto
+                    repeat(4, 1fr); // 4 rows/columns one fractional unit width/heigth
+
+## 62. Placing and Spanning Grid items

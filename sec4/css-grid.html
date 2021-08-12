@@ -32,18 +32,25 @@
 				background-color: crimson;
 			}
 
-			.container {
+			.container--1 {
 				/* STARTER */
 				font-family: sans-serif;
 				background-color: #ddd;
-				font-size: 40px;
+				font-size: 30px;
 				margin: 40px;
 
 				/* CSS GRID */
-				display: flex;
+				display: grid;
+				/* grid-template-columns: 1fr 1fr 1fr auto; */
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: 1fr 1fr;
+				/* gap: 30px; */
+				column-gap: 10px;
+				row-gap: 40px;
 			}
 
 			.container--2 {
+				display: none;
 				/* STARTER */
 				font-family: sans-serif;
 				background-color: black;
